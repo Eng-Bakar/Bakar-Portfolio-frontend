@@ -2,7 +2,7 @@ import NovaCare from "../Images/NovaCare.png"
 import WorkSpace from "../Images/WorkSpace.png"
 import Electrnic from "../Images/Electronic.png"
 function Projects (){
-    return <div className=" mt-[100px]">
+    return <div id="Projects" className=" mt-[100px]">
         <h1 className="text-center text-4xl font-semibold text-orange"> My Projects </h1>
         <p className="text-center w-[350px] sm:w-[500px] text-[20px] sm:text-[17px] ml-[5%] sm:ml-[30%] mt-3"> I build innovative websites and apps, like Novacare, Work Sapce and Bakar Gadgets, combining full-stack development with creative, user-centric design.</p>
         <div className="sm:flex justify-around   mb-[100px] ">

@@ -2,7 +2,7 @@ import BakarImg from "../Images/Bakar.jpg"
 import { Link } from "react-router-dom";
 import Resume from "../Docs/BakarResume.pdf"
 function HeroSection (){
-    return <div className="sm:flex sm:justify-between mt-[40px] px-[20px] sm:px-[100px]"> 
+    return <div id="home" className="sm:flex sm:justify-between mt-[40px] px-[20px] sm:px-[100px]"> 
         <div className="sm:w-[450px] mt-[6%] ">
             <div className="border-2 border-black w-[80px] h-[30px] rounded-[20px] text-center">
                 <h1 className="font-semibold"> Hello!</h1>

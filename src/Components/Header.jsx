@@ -1,5 +1,7 @@
 import BakarLogo from "../Images/bakarlogo.png"
 import { useState } from "react"
+// import { Link } from "react-router-dom"
+import {Link} from "react-scroll"
 function Header (){
     const [IsOpen, setIsOpen] = useState(false)
     const HandleOpen = ()=> {
@@ -15,11 +17,11 @@ function Header (){
             <i style={{display: IsOpen == true ? "none" : ""}}  onClick={HandleOpen} class="fa-solid fa-bars sm:hidden absolute text-white top-[50px] right-16 text-4xl"></i>
             <i style={{display: IsOpen == true ? "block" : ""}} onClick={HandleClose}  class="fa-solid fa-x sm:hidden absolute hidden text-white top-[50px] right-16 text-4xl"></i>
             <ul style={{display: IsOpen == true ? "block": ""}} className="sm:flex hidden sm:pb-0 pb-[20px] text-xl font-semibold mr-4 gap-8 mt-2"> 
-                <li className="hover:text-orange hover:font-semibold"> Home </li>
-                <li className="hover:text-orange hover:font-semibold"> Services </li>
-                <li className="hover:text-orange hover:font-semibold"> Skills </li>
-                <li className="hover:text-orange hover:font-semibold"> About </li>
-                <li className="hover:text-orange hover:font-semibold"> Contact</li>
+                <li className="hover:text-orange hover:font-semibold"> <Link to="home" smooth={true} duration={500}> Home </Link> </li>
+                <li className="hover:text-orange hover:font-semibold"> <Link to="Services" smooth={true} duration={500}> Services </Link> </li>
+                <li className="hover:text-orange hover:font-semibold"> <Link to="Projects" smooth={true} duration={500}> Projects </Link> </li>
+                <li className="hover:text-orange hover:font-semibold"> <Link to="About" smooth={true} duration={500}> About </Link> </li>
+                <li className="hover:text-orange hover:font-semibold"> <Link to="Contact" smooth={true} duration={500}> Contact </Link> </li>
             </ul>
 
         </div>

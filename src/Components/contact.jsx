@@ -8,7 +8,8 @@ function Contact (){
     const [ Price, setPrice] = useState("")
     const [ Message, setMessage] = useState("")
 
-    const HandlePostMessage = ()=> {
+    const HandlePostMessage = (e)=> {
+        e.preventDefault()
         axios.post("http://localhost:5000/contact/create", {
             "fullname": Name,
             "email": Email,
@@ -31,7 +32,7 @@ function Contact (){
         //     HandlePostMessage()
         // }
     }
-    return <div className="mb-[100px] sm:mt-0 mt-[300px]">
+    return <div id="Contact" className="mb-[100px] sm:mt-0 mt-[300px]">
         <img className="w-[300px] mt-[-445px] sm:mt-[-440px] ml-[-12%]  sm:ml-[16%] absolute" src={ContactGirl} alt="" />
         <div className="sm:w-[750px] w-[335px] sm:flex sm:justify-between sm:ml-[23%] ml-[10%] px-[20px] pb-[15px] sm:pb-0 sm:px-[30px] pt-[50px] mt-[20%] sm:h-[450px] rounded-[20px] bg-black">
             <div className="w-[235px] ml-[20px] text-white">

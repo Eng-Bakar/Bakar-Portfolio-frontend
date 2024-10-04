@@ -1,6 +1,6 @@
 import BakarSpeaking from "../Images/BakarSpeach.jpg"
 function AboutMe (){
-    return <div className="mt-[100px] sm:flex sm:justify-between sm:px-[100px]">
+    return <div id="About" className="mt-[100px] sm:flex sm:justify-between sm:px-[100px]">
         <div className="mt-4">
             <div className="bg-orange relative sm:w-[410px] w-[320px] ml-[7%] sm:ml-0 sm:h-[410px] h-[320px] rounded-bl-[50%] rounded-tr-[90%] rounded-tl-[60%] rounded-br-[20%] ">
                 <img className="absolute w-full h-full rounded-tr-[90%] rounded-tl-[60%] rounded-bl-[40%] rounded-br-[20%]" src={BakarSpeaking} alt="" />
